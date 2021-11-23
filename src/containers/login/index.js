@@ -17,13 +17,14 @@ function Login(props){
             <TextInput placeholder="Number" keyboardType="number-pad" style={inputStyle} />
             <TextInput placeholder="Password" keyboardType="default" secureTextEntry={true} style={inputStyle}/>
             
-            <TouchableOpacity style={buttonStyle} onPress={()=>props.navigation.navigate("Home")}>
+            {/* <TouchableOpacity style={buttonStyle} onPress={()=>props.navigation.navigate("Home")}>
                 <Text>Log In</Text>
-            </TouchableOpacity>
+            </TouchableOpacity> */}
 
-            <TouchableOpacity style={buttonStyle} onPress={()=>props.navigation.navigate("Register") }>
-                <Text>Register</Text>
+            <TouchableOpacity style={buttonStyle} onPress={()=>props.navigation.navigate("TabNav")}>
+                <Text>Login</Text>
             </TouchableOpacity>
+            
         </SafeAreaView>
     )
 }
